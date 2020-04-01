@@ -1,0 +1,14 @@
+[
+    {
+      "type": "En el dia",
+      "price": 100
+    },
+    {
+      "type": "Al otro dia",
+      "price": 50
+    },
+    {
+      "type": "Cuando este disponible",
+      "price": 25
+    }
+  ]

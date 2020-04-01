@@ -1,0 +1,4 @@
+<p *ngIf="product.stock == 0">
+    <label>Sin stock</label>
+    <button (click)="notify.emit()">Notificar disponibilidad</button>
+</p>
