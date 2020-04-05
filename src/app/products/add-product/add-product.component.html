@@ -1,0 +1,17 @@
+<form (ngSubmit)="newProduct(newProductForm.value)" [formGroup]="newProductForm">
+    <input type="hidden" formControlName="id">
+  
+    <label for="name">Nombre</label>
+    <input type="text" formControlName="name">
+
+    <label for="description">Descripcion</label>
+    <input type="text" formControlName="description">
+
+    <label for="price">Precio</label>
+    <input type="number" formControlName="price">
+
+    <label for="stock">Stock</label>
+    <input type="number" formControlName="stock">
+
+    <input type="submit" class="btn--blue btn--add" [disabled]="!newProductForm.valid" value="Agregar">
+  </form>
