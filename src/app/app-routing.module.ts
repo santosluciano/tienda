@@ -6,10 +6,11 @@ import { AddProductComponent } from './products/add-product/add-product.componen
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
-
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  { path: '', component: ProductListComponent },
+  { path: '', component: LoginComponent },
+  { path: 'products', component: ProductListComponent },
   { path: 'add-product', component: AddProductComponent },
   { path: 'products/:productId', component: ProductDetailsComponent },
   { path: 'cart', component: CartComponent },
